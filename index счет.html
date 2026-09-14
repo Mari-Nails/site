@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мария Едыгарова | Ногтевая студия MARI NAILS</title>
+    <style>
+        :root { --bg: #f5e6de; --shadow: 0 4px 15px rgba(0,0,0,0.04); --rd: 12px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif; background: var(--bg); margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; }
+        .container { width: 100%; max-width: 480px; padding: 20px; box-sizing: border-box; background: #fff; min-height: 100vh; box-shadow: 0 0 30px rgba(0,0,0,0.05); }
+        .profile { text-align: center; margin: 15px 0 25px; }
+        .avatar { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 1px solid #eaeaea; padding: 3px; background: #fff; }
+        .name { font-size: 22px; font-weight: 600; margin: 15px 0 3px; color: #000; }
+        .subtitle { font-size: 12px; font-weight: 500; color: #8a8a8a; text-transform: uppercase; letter-spacing: 1px; }
+        .links-container { display: flex; flex-direction: column; gap: 12px; margin-bottom: 25px; }
+        .btn { display: flex; align-items: center; justify-content: center; padding: 14px; border-radius: var(--rd); text-decoration: none; font-weight: 500; font-size: 15px; color: #fff; box-shadow: var(--shadow); }
+        .btn-instagram { background: linear-gradient(90deg, #f09433, #dc2743, #bc1888); }
+        .btn-max { background: #7A1FA2; }
+        .btn-dikidi { background: linear-gradient(90deg, #4b6cb7, #182848); }
+        .btn-telegram { background: #0093d9; }
+        .btn-whatsapp { background: #24d266; }
+        
+        .address-card { background: #fafafa; border-left: 3px solid #ff5a5a; border-radius: 6px; padding: 15px; margin-bottom: 30px; font-size: 14px; line-height: 1.5; }
+        .address-card a { color: inherit; text-decoration: none; display: block; }
+        .address-title { font-weight: 700; color: #ff5a5a; margin-bottom: 5px; }
+        
+        .phone-container { display: flex; align-items: center; justify-content: space-between; margin-top: 12px; padding-top: 10px; border-top: 1px dashed #eee; }
+        .phone-block { font-weight: 600; color: #333; font-size: 14px; }
+        .btn-phone-small { background: linear-gradient(90deg, #10b981, #059669); color: #fff; text-decoration: none; font-weight: 500; font-size: 13px; padding: 6px 14px; border-radius: 8px; box-shadow: var(--shadow); display: inline-flex; align-items: center; gap: 4px; }
+        
+        .section-title { font-size: 16px; font-weight: 600; margin-bottom: 15px; padding-left: 5px; border-left: 3px solid #bda091; }
+        .service-list { display: flex; flex-direction: column; gap: 12px; }
+        .service-card { display: flex; background: #fafafa; border: 1px solid #f0f0f0; border-radius: var(--rd); overflow: hidden; height: 90px; align-items: center; }
+        .service-img { width: 90px; height: 90px; object-fit: cover; flex-shrink: 0; }
+        .service-info { padding: 10px 15px; display: flex; flex-direction: column; justify-content: center; flex-grow: 1; min-width: 0; }
+        .service-name { font-size: 15px; font-weight: 600; margin: 0 0 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .service-desc { font-size: 11px; color: #777; margin: 0 0 6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .service-footer { display: flex; justify-content: space-between; align-items: center; }
+        .service-price { font-size: 15px; font-weight: 700; color: #000; }
+        .service-duration { font-size: 11px; color: #999; background: #eee; padding: 2px 6px; border-radius: 20px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="profile">
+        <img src="images/image_ZqZg7c.png" alt="Мария Едыгарова" class="avatar">
+        <h1 class="name">Мария Едыгарова</h1>
+        <div class="subtitle">Ногтевая студия MARI NAILS</div>
+    </div>
+    <div class="links-container">
+        <!-- ОБНОВЛЕННЫЙ INSTAGRAM -->
+        <a href="https://www.instagram.com/krasota_vnutri_nv?stkn=cmczbGFmdzU3Y3ow&utm_source=qr" target="_blank" class="btn btn-instagram">📸 Мы в Instagram</a>
+        
+        <!-- ОБНОВЛЕННЫЙ MAX -->
+        <a href="https://max.ru/u/f9LHodD0cOJtoOP_SPXN4ubTyQm-37bNcS2T2d-EDnzaupd384OKOzYn058" target="_blank" class="btn btn-max">🟣 Записаться через Max</a>
+        
+        <a href="https://dikidi.ru/profile/studiya_manikyura_mari_nails_747045" target="_blank" class="btn btn-dikidi">📅 Записаться через DIKIDI</a>
+        
+        <!-- ОБНОВЛЕННЫЙ TELEGRAM С ГОТОВЫМ ТЕКСТОМ -->
+        <a href="https://t.me/mari_nails_nv" target="_blank" class="btn btn-telegram">✈️ Написать в Telegram</a>
+        
+        <!-- ОБНОВЛЕННЫЙ WHATSAPP С ГОТОВЫМ ТЕКСТОМ -->
+        <a href="https://wa.me/qr/Z4XBL555LBEAJ1" target="_blank" class="btn btn-whatsapp">💬 Записаться через WhatsApp</a>
+    </div>
+    <div class="address-card">
+        <a href="https://yandex.ru/maps/-/CThcVDM3" target="_blank">
+            <div class="address-title">📍 Наш адрес:</div>
+            <div>Москва, Тагильская улица, 4В, этаж 1</div>
+            <div style="color: #777; font-size: 11px; margin-top: 4px;">(ближайшее метро: Бульвар Рокоссовского)</div>
+        </a>
+        <div class="phone-container">
+            <div class="phone-block">📞 8-919-538-77-37</div>
+            <a href="tel:+79195387737" class="btn-phone-small">Позвонить</a>
+        </div>
+    </div>
+    <div class="section-title">Услуги студии</div>
+    <div class="service-list">
+        <div class="service-card">
+            <img src="images/image_f0EXoZ.png" alt="Маникюр френч" class="service-img">
+            <div class="service-info">
+                <h3 class="service-name">Маникюр френч</h3>
+                <p class="service-desc">Маникюр с покрытием гель лак + френч</p>
+                <div class="service-footer"><span class="service-price">4 200 ₽</span><span class="service-duration">⏳ 1.5 ч</span></div>
+            </div>
+        </div>
+        <div class="service-card">
+            <img src="images/image_o1oyPd.png" alt="Наращивание ногтей" class="service-img">
+            <div class="service-info">
+                <h3 class="service-name">Наращивание ногтей</h3>
+                <p class="service-desc">Моделирование и наращивание длины ногтей</p>
+                <div class="service-footer"><span class="service-price">6 000 ₽</span><span class="service-duration">⏳ 2 ч</span></div>
+            </div>
+        </div>
+        <div class="service-card">
+            <img src="images/image_pQ-ySF.png" alt="Полное снятие + маникюр" class="service-img">
+            <div class="service-info">
+                <h3 class="service-name">Полное снятие + маникюр</h3>
+                <p class="service-desc">Полное снятие материала + гигиенический маникюр</p>
+                <div class="service-footer"><span class="service-price">2 100 ₽</span><span class="service-duration">⏳ 1 ч</span></div>
+            </div>
+        </div>
+        <div class="service-card">
+            <img src="images/image_cUByj4.png" alt="Полное снятие" class="service-img">
+            <div class="service-info">
+                <h3 class="service-name">Полное снятие</h3>
+                <p class="service-desc">Полное снятие без последующего покрытия</p>
+                <div class="service-footer"><span class="service-price">500 ₽</span><span class="service-duration">⏳ 30 мин</span></div>
+            </div>
+        </div>
+        <div class="service-card">
+            <img src="images/image_I_2kpp.png" alt="Маникюр с покрытием гель лак" class="service-img">
+            <div class="service-info">
+                <h3 class="service-name">Маникюр с покрытием гель лак</h3>
+                <p class="service-desc">Снятие, укрепление жестким гелем, мелкий ремонт</p>
+                <div class="service-footer"><span class="service-price">3 400 ₽</span><span class="service-duration">⏳ 1.5 ч</span></div>
+            </div>
+        </div>
+        <div class="service-card">
+            <img src="images/image_M_ltXP.png" alt="Гигиенический маникюр" class="service-img">
+            <div class="service-info">
+                <h3 class="service-name">Гигиенический маникюр</h3>
+                <p class="service-desc">Комбинированный маникюр без покрытия</p>
+                <div class="service-footer"><span class="service-price">1 700 ₽</span><span class="service-duration">⏳ 30 мин</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
